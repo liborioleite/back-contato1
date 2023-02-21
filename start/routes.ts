@@ -6,5 +6,7 @@ Route.get('/', async () => {
 
 Route.group(() => {
   Route.get('index', 'UsersController.index')
+  Route.get('show/:id', 'UsersController.show')
   Route.post('store', 'UsersController.store')
+  Route.post('login', 'AuthController.login')
 })
